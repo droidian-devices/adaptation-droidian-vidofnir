@@ -1,0 +1,11 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@
+
+override_dh_auto_build:
+	gcc src/pbhelper.c -lbatman-wrappers -O3 -o usr/bin/pbhelper
+	gcc src/aw210xx.c `pkg-config --cflags --libs dbus-1` -o usr/bin/aw210xx.c
+
+override_dh_installsystemd:
+	dh_installsystemd -padaptation-vidofnir-configs --name=pbhelper pbhelper.service --no-start

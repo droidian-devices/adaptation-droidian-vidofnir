@@ -1,0 +1,10 @@
+/etc/modprobe.d
+/etc/modules-load.d
+/etc/udev/rules.d
+/etc/phosh
+/etc/pulse
+/usr/lib/droid-vendor-overlay
+/usr/lib/droidian/device
+/usr/lib/systemd/user
+/usr/share/glib-2.0/schemas
+/usr/bin/droid

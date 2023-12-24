@@ -1,0 +1,8 @@
+[Unit]
+Description=aw210xx flashlight controller
+After=org.droidian.Flashlightd.service
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/aw210xx
+Restart=on-failure
