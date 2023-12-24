@@ -3,6 +3,8 @@ Description=A Workaround for the power button problem.
 After=phosh.service
 
 [Service]
+ExecStartPre=/usr/bin/sleep 10
+ExecStartPre=/usr/bin/echo 150 > /sys/class/leds/lcd-backlight/brightness
 ExecStart=/usr/bin/pbhelper
 
 [Install]
