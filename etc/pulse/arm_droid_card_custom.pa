@@ -1,1 +1,1 @@
-load-module module-droid-card rate=48000 voice_virtual_stream=true hw_volume=false
+load-module module-droid-card rate=48000 output_deep_buffer=false voice_virtual_stream=true hw_volume=false
