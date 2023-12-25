@@ -1,0 +1,11 @@
+[Unit]
+Description=Load wlan
+After=phosh.service
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/usr/bin/enable-wifi.sh
+
+[Install]
+WantedBy=multi-user.target
