@@ -5,7 +5,7 @@ After=phosh.service
 [Service]
 Type=oneshot
 RemainAfterExit=yes
-ExecStart=/usr/bin/enable-wifi.sh
+ExecStart=/usr/bin/enable-wlan.sh
 
 [Install]
 WantedBy=multi-user.target
