@@ -3,6 +3,9 @@ Description=A Workaround for the power button problem.
 After=phosh.service
 
 [Service]
+Restart=always
+RestartSec=5s
+Type=simple
 ExecStart=/usr/bin/pbhelper
 
 [Install]
