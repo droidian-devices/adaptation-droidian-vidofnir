@@ -1,0 +1,86 @@
+---
+outlines:
+    default: { width: 52, height: 66 }
+    altline: { width: 74, height: 66 }
+    wide: { width: 90, height: 66 }
+    spaceline: { width: 194, height: 66 }
+    special: { width: 65, height: 66 }
+
+views:
+    base:
+        - "q w e r t y u i o p å"
+        - "a s d f g h j k l ö ä"
+        - "Shift_L   < z x c v b n m  BackSpace"
+        - "show_numbers preferences         space        comma period Return"
+    upper:
+        - "Q W E R T Y U I O P Å"
+        - "A S D F G H J K L Ö Ä"
+        - "Shift_L   > Z X C V B N M  BackSpace"
+        - "show_numbers preferences         space        semicolon colon Return"
+    numbers:
+        - "1 2 3 4 5 6 7 8 9 0"
+        - "@ # $ % & - _ + ( )"
+        - "show_symbols   , \" ' : ; ! ?  BackSpace"
+        - "show_letters preferences         space        comma period Return"
+    symbols:
+        - "~ ` | · √ π τ ÷ × ¶"
+        - "© ® £ € ¥ ^ ° * { }"
+        - "show_numbers_from_symbols   \\ / < > = [ ]  BackSpace"
+        - "show_letters preferences         space        comma period Return"
+
+buttons:
+    Shift_L:
+        action:
+            locking:
+                lock_view: "upper"
+                unlock_view: "base"
+        outline: "altline"
+        icon: "key-shift"
+    BackSpace:
+        outline: "altline"
+        icon: "edit-clear-symbolic"
+        action: erase
+    preferences:
+        action: show_prefs
+        outline: "special"
+        icon: "keyboard-mode-symbolic"
+    show_numbers:
+        action:
+            set_view: "numbers"
+        outline: "wide"
+        label: "123"
+    show_numbers_from_symbols:
+        action:
+            set_view: "numbers"
+        outline: "altline"
+        label: "123"
+    show_letters:
+        action:
+            set_view: "base"
+        outline: "wide"
+        label: "ABC"
+    show_symbols:
+        action:
+            set_view: "symbols"
+        outline: "altline"
+        label: "*/="
+    period:
+        outline: "special"
+        text: "."
+    comma:
+        outline: "special"
+        text: ","
+    space:
+        outline: "spaceline"
+        text: " "
+    Return:
+        outline: "wide"
+        icon: "key-enter"
+        keysym: "Return"
+    colon:
+        outline: "special"
+        text: ":"
+    semicolon:
+        outline: "special"
+        text: ";"
+

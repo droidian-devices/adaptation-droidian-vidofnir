@@ -1,0 +1,40 @@
+---
+outlines:
+    default: { width: 90, height: 53 }
+    altline: { width: 90, height: 53 }
+    outline7: { width: 130, height: 53 }
+    spaceline: { width: 140, height: 53 }
+
+views:
+    base:
+        - "1 2 3 parenleft parenright"
+        - "4 5 6 numbersign asterisk"
+        - "7 8 9 plus minus"
+        - "BackSpace 0 space Return"
+
+buttons:
+    BackSpace:
+        outline: "altline"
+        icon: "edit-clear-symbolic"
+        action: erase
+    space:
+        outline: spaceline
+        text: " "
+    Return:
+        outline: outline7
+        icon: "key-enter"
+        keysym: "Return"
+    asterisk:
+        text: "*"
+    numbersign:
+        text: "#"
+    minus:
+        text: "-"
+    plus:
+        text: "+"
+    parenleft:
+        text: "("
+    parenright:
+        text: ")"
+
+
