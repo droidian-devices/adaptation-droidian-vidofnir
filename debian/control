@@ -14,7 +14,6 @@ Depends: ${misc:Depends},
          adaptation-vidofnir-configs,         
          droidian-quirks-full-resize,
          droidian-camera,
-         libbatman-wrappers,
          bsdextrautils,
 Description: adapatation-droidian-vidofnir - meta
  Volla Phone X23 api32 adaptation metapackage
