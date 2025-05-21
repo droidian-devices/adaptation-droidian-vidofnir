@@ -1,0 +1,11 @@
+[Unit]
+Description=Load WLAN & FM radio kernel modules
+After=bluebinder.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/sbin/modprobe wlan_drv_gen4m_6789
+ExecStart=/usr/sbin/modprobe fmradio_drv_mt6631_6635
+
+[Install]
+WantedBy=multi-user.target

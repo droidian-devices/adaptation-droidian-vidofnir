@@ -4,21 +4,23 @@ Section: metapackages
 Priority: optional
 Build-Depends: debhelper (>= 13), gcc, batman-dev, libdbus-1-dev
 Standards-Version: 4.5.0.3
-Vcs-Browser: https://github.com/droidian-devices/adaptation-droidian-vidofnir
-Vcs-Git: https://github.com/droidian-devices/adaptation-droidian-vidofnir.git
+Vcs-Browser: https://github.com/droidian-devices/adaptation-volla-vidofnir
+Vcs-Git: https://github.com/droidian-devices/adaptation-volla-vidofnir.git
 
-Package: adaptation-droidian-vidofnir
+Package: adaptation-volla-vidofnir
 Architecture: arm64
 Depends: ${misc:Depends},
+         linux-bootimage-volla-vidofnir,
          adaptation-hybris-api32-phone,
-         adaptation-vidofnir-configs,         
+         adaptation-volla-vidofnir-configs,
          droidian-quirks-full-resize,
          droidian-camera,
-         bsdextrautils,
-Description: adapatation-droidian-vidofnir - meta
+Description: adaptation-volla-vidofnir - meta
  Volla Phone X23 api32 adaptation metapackage
 
-Package: adaptation-vidofnir-configs
+Package: adaptation-volla-vidofnir-configs
 Architecture: arm64
 Depends: ${misc:Depends},
+         adaptation-volla-vidofnir (= ${binary:Version}),
+         bsdextrautils,
 Description: Volla Phone X23's specific adaptation configs

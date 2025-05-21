@@ -1,0 +1,13 @@
+/etc/phosh
+/etc/pulse
+/usr/bin/droid
+/usr/lib/modprobe.d
+/usr/lib/modules-load.d
+/usr/lib/udev/rules.d
+/usr/lib/systemd/system/android-mount.service.d
+/usr/lib/systemd/system/phosh.service.d
+/usr/lib/droid-vendor-overlay
+/usr/lib/droidian/device
+/usr/lib/systemd/user
+/usr/share/feedback/themes
+/usr/share/glib-2.0/schemas
